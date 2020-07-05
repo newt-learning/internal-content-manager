@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const Content = mongoose.model("content");
 const arrayToObjectById = require("../utils/helpers");
+
+const Content = mongoose.model("newt-content");
 
 module.exports = app => {
   // POST request to create a content item

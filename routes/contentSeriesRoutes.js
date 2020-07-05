@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const ContentSeries = mongoose.model("content-series");
 const arrayToObjectById = require("../utils/helpers");
+
+const ContentSeries = mongoose.model("newt-series");
 
 module.exports = app => {
   // POST request to create a content module

@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
-// Models
-const Source = mongoose.model("sources");
 // Helpers
 const arrayToObjectById = require("../utils/helpers");
+
+// Models
+const Source = mongoose.model("newt-sources");
 
 module.exports = app => {
   // POST request to create mapping between media and associated Newt

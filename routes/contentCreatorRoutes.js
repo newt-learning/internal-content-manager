@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const ContentCreator = mongoose.model("content-creators");
 const arrayToObjectById = require("../utils/helpers");
+
+const ContentCreator = mongoose.model("newt-content-creators");
 
 module.exports = app => {
   // POST request to create a content creator
