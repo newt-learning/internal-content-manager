@@ -6,12 +6,11 @@ const ContentSeries = mongoose.model("newt-series");
 module.exports = app => {
   // POST request to create a content module
   app.post("/api/content/series", async (req, res) => {
-    const { name, subjects, modules, type, url, contentCreatorId } = req.body;
+    const { name, description, type, url, contentCreatorId } = req.body;
 
     const contentSeries = new ContentSeries({
       name,
-      subjects,
-      modules,
+      description,
       type,
       url,
       contentCreatorId,

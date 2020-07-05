@@ -8,30 +8,22 @@ module.exports = app => {
   app.post("/api/content/item", async (req, res) => {
     const {
       name,
+      description,
       url,
       partOfSeries,
-      contentSeries,
+      series,
       contentCreator,
       source,
-      knowledgeSubject,
-      knowledgeModule,
-      level,
-      primaryTopics,
-      secondaryTopics
     } = req.body;
 
     const content = new Content({
       name,
+      description,
       url,
       partOfSeries,
-      contentSeries,
+      series,
       contentCreator,
       source,
-      knowledgeSubject,
-      knowledgeModule,
-      level,
-      primaryTopics,
-      secondaryTopics,
       dateAdded: Date.now(),
       lastUpdated: Date.now()
     });
